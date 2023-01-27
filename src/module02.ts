@@ -35,3 +35,21 @@ let newManager: ManagementEmployee = {
     joinedDate: new Date('20233-1-25'),
     stockPlan: true,
 };
+
+// Literal narrowing :- process of going from infinite number of possible cases to few possible cases
+type possibleOutcomes = 1 | 2 | 3 | 4 | 5 | 6;
+
+let diceResult: possibleOutcomes;
+
+// diceResult = 7; // error
+diceResult = 3;
+diceResult = 2;
+
+//  list types
+// arrays
+let numbers: number[] = [2, 4, 5];
+let employees: string[] = ['Rowan', 'Alan', 'Adam', 'Ellie', 'Hamish'];
+
+// Tuples
+type employee = [string, number, boolean]; // name, age, boardMember
+let employee1: employee = ['Adam', 32, true];
