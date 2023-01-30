@@ -1,2 +1,4 @@
 build
 mslearn-typescript
+*.env
+node_modules
